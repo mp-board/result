@@ -1,1 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board of Secondary Education, Madhya Pradesh : Examination Results </title>
+    <style>
+        *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+        html {
+	font-family: Open Sans, Helvetica, sans-serif;
+}
+body{
+   background: #f7e5cd;
+}
+        table {
+	table-layout: auto;
+	border-collapse: collapse;
+	width: 100%;
+	margin:10px auto;
+   font-size: 16px;
+}
 
+table th,
+table td {
+	border: 2px solid rgb(150, 74, 62);
+	vertical-align: top;
+}
+
+table > thead > tr > td{
+   text-align: center;
+}
+table > thead > tr > th{
+   text-align: center;
+   padding: 3px;
+}
+table > tbody > tr > td{
+   text-align: center;
+}
+table > tbody > tr > th{
+   text-align: center;
+}
+table > tfoot > tr > td{
+   text-align: center;
+}
+table > tfoot > tr > th{
+   text-align: center;
+}
+/**/
+.bg-head{
+   background: #eeba6d;
+}
+.container{
+padding: 5px 10px;
+display: flex;
+flex-flow: column;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
+}
+.header{
+    text-align: center;
+    width: 100%;
+    min-height: 60px;
+    font-size: 18px;
+}
+.report-card{
+max-width: 700px;
+}
+.result{
+    color:red;
+    margin-bottom: 15px;
+}
+.re-totaling{
+    min-height: 50px;
+    padding: 10px 10px;
+   border-top: 2px solid rgb(169, 66, 66);
+   border-bottom: 2px solid rgb(169, 66, 66);
+    margin: 10px;
+}
+.note{
+    width: 70%;
+    font-size: 18px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Higher Secondary School Certificate Examination (HSSC) - 12th Class 
+                Result - 2024 </h3>
+        </div>
+        <div class="report-card">
+            <div class="roll-number" style="margin-bottom: 15px;">
+                <table>
+                    <thead>
+                        <tr>
+                           <th>Centre Code</th>
+                           <th>School Code</th>
+                           <th>Enrollment No</th>
+                           <th>Regular/Private</th>
+                           <th>Roll Number</th>
+                        </tr>
+                        <tr>
+                           <td>xxxxxxxxx</td>
+                           <td>xxxxxxxxx</td>
+                           <td>xxxxxxxxx</td>
+                           <td>xxxxxxxxx</td>
+                           <td>xxxxxxxxx</td>
+                        </tr>
+                     </thead>
+                </table>
+            </div>
+            <div class="student-detail" style="margin-bottom: 15px;">
+                <table style="width: 70%; text-align: left;">
+                    <tbody>
+                        <tr>
+                           <th width="40%">Student Name</th>
+                           <td style="padding-left:5px; text-align: left;">Ankush Chaturvedi</td>
+                        </tr>
+                        <tr>
+                           <th width="40%">Father's Name</th>
+                           <td style="padding-left:5px; text-align: left;">Rajkumar</td>
+                        </tr>
+                        <tr>
+                           <th width="40%">Mother's Name</th>
+                           <td style="padding-left:5px; text-align: left;">Kavita</td>
+                        </tr>
+                     </tbody>
+                </table>
+            </div>
+            <p style="color:red">!!! Note : this information should not be treated as marksheet . !!!</p>
+            <div class="subject-marks">
+                <table cellpadding="10" cellspacing="0">
+                    <thead>
+                       <tr class="bg-head">
+                          <th>Subject Code</th>
+                          <th>Subject Name</th>
+                          <th>Theory Marks</th>
+                          <th>Practical Marks</th>
+                          <th>Total Marks</th>
+                          <th>Remark</th>
+                       </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                          <td>001</td>
+                          <td>Hindi</td>
+                          <td>88</td>
+                          <td></td>
+                          <td>88</td>
+                          <td>DISTN</td>
+                       </tr>
+                       <tr>
+                        <td>05</td>
+                        <td>English</td>
+                        <td>93</td>
+                        <td></td>
+                        <td>93</td>
+                        <td>DISTN</td>
+                     </tr>
+                     <tr>
+                        <td>03</td>
+                        <td>Chemistry</td>
+                        <td>72</td>
+                        <td>19</td>
+                        <td>91</td>
+                        <td>DISTN</td>
+                     </tr>
+                     <tr>
+                        <td>04</td>
+                        <td>Physics</td>
+                        <td>71</td>
+                        <td>19</td>
+                        <td>90</td>
+                        <td>DISTN</td>
+                     </tr>
+                     <tr>
+                        <td>51</td>
+                        <td>Math</td>
+                        <td>96</td>
+                        <td></td>
+                        <td>96</td>
+                        <td>DISTN</td>
+                     </tr>
+                       
+                    </tbody>
+                    <tfoot>
+                     <tr class="bg-head">
+                        <td colspan="6"> Grand Total (Theory + Practical) : 458/500 </td>
+                     </tr>
+                     <tr>
+                        <td>Additional Sub</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     </tr>
+                    </tfoot>
+                 </table>
+            </div>
+            <div class="result">
+                <h3> <strong>Result : </strong>Student Pass in First Division .</h3>
+            </div>
+        </div>
+        <div class="re-totaling bg-head">
+            <p>Students may apply for re-totaling/copy ofg answer book request as mp board within 15 days through mp online kiosk only from the date of result declaration </p>
+        </div>
+        <div class="note">
+            <p align="center" style="font-size: 18px;"><font color=black face="Tahoma" size="2"><strong>Note:</strong>
+                Neither <strong><font color="#000080">Result - troubleshooters</font>&nbsp;nor <a target="_blank" href="http://www.mpbse.nic.in">Board of Secondary Education, Madhya Pradesh</a></strong>
+                is responsible for any inadvertent error that may have crept in the results being
+                published on <strong>NET</strong>. The results published on net are for immediate
+                information to the examinees. These cannot be treated as original mark sheets. Original
+                mark sheets are being issued by the Board separately.it maybe fake.</font>
+            </p>
+        </div>
+    </div>
+    <script>
+        let params = new URLSearchParams(window.location.search);
+            const rollNumber = params.get('roll_number'); // 'node'
+            const applicationNumber = params.get('application_number'); // '2'
+            if(!rollNumber || !applicationNumber){
+                window.location.href = `index.html`
+            }
+            /*======================*/
+            const rollNumberData=123456
+            const applicationNumberData =555555
+
+            // const matchRN = rollNumberData.find((roll)=> roll == rollNumber)
+            // const matchAN = rollNumberData.find((app)=> app == applicationNumber)
+            if(rollNumberData != rollNumber|| applicationNumberData != applicationNumber){
+                console.log('record not found')
+            }else{
+                console.log(`rn :${rollNumber} and ap:${applicationNumber}`)
+            }
+    </script>
+</body>
+</html>
