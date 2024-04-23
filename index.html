@@ -1,1 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board of Secondary Education Results</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background: #7a8cb7; 
+  font-family: Raleway, sans-serif;
+  color: #666666;
+}
+/*header*/
+header{
+    text-align: center;
+    width: 100%;
+    min-height: 5rem;
+    background: #3078ec;
+    padding: 15px 5px;
+    color: #000000;
+}
+.login {
+  margin: 20px auto;
+  padding: 40px 50px;
+  max-width: 400px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 1px 1px 1px #666;
+}
+  .login input {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 14px 12px;
+    font-size: 16px;
+    border-radius: 2px; 
+    font-family: Raleway, sans-serif;
+  }
+
+.login input[type=text],
+.login input[type=password] {
+  border: 1px solid #c0c0c0;
+  transition: .2s;
+}
+
+.login input[type=text]:hover {
+  border-color: #F44336;
+  outline: none;
+  transition: all .2s ease-in-out;
+} 
+
+.login input[type=submit] {
+  border: none;
+  background: #EF5350;
+  color: white;
+  font-weight: bold;  
+  transition: 0.2s;
+  margin: 20px 0px;
+}
+
+.login input[type=submit]:hover {
+  background: #F44336;  
+}
+
+  .login h2 {
+    margin: 20px 0 0; 
+    color: #EF5350;
+    font-size: 28px;
+  }
+
+.login p {
+  margin-bottom: 40px;
+}
+
+.links {
+  display: table;
+  width: 100%;  
+  box-sizing: border-box;
+  border-top: 1px solid #c0c0c0;
+  margin-bottom: 10px;
+}
+
+.links a {
+  display: table-cell;
+  padding-top: 10px;
+}
+
+.links a:first-child {
+  text-align: left;
+}
+
+.links a:last-child {
+  text-align: right;
+}
+
+  .login h2,
+  .login p,
+  .login a {
+    text-align: center;    
+  }
+
+.login a {
+  text-decoration: none;  
+  font-size: .8em;
+}
+
+.login a:visited {
+  color: inherit;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+label{
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Higher Secondary School Certificate Examination (HSSC) - 12th Class 
+            Result - 2024 </h2>
+    </header>
+    <form class="login">
+        <h2>Welcome, Students!</h2>
+        <p style="margin-top: 5px;"><span>Note : </span> This is <strong>Rsult-Troubleshooters</strong> Here you will see the result of only those students whose result is stuck in the official website.</p>
+        <label>Roll No.</label>
+        <input type="text" id="roll-num" placeholder="Enter Roll No." />
+        <label>Application No.</label>
+        <input type="text" id="app-num" placeholder="Enter Application No." />
+        <input type="submit" value="Submit" id="submit" />
+        <div class="links">
+          <a href="#">Poweredby Result - Troubleshooters</a>
+        </div>
+      </form>
+
+      <div style="padding: 5px 10px;">
+        <p align="center"><font color=black face="Tahoma" size="2"><strong>Note:</strong>
+            Neither <strong><font color="#000080">Result - troubleshooters</font>&nbsp;nor <a target="_blank" href="http://www.mpbse.nic.in">Board of Secondary Education, Madhya Pradesh</a></strong>
+            is responsible for any inadvertent error that may have crept in the results being
+            published on <strong>NET</strong>. The results published on net are for immediate
+            information to the examinees. These cannot be treated as original mark sheets. Original
+            mark sheets are being issued by the Board separately.it maybe fake.</font>
+        </p>
+      </div>
+      <script>
+        const rollNumber = document.querySelector("#roll-num");
+        const applicationNum = document.querySelector("#app-num");
+        const submit = document.querySelector("#submit");
+
+        submit.addEventListener('click',(e)=>{
+          e.preventDefault();
+          console.log('btn click')
+          if(rollNumber.value.length == 0 )
+          {
+            alert('rollnumber field should not be empty')
+          }
+          if(applicationNum.value.length == 0){
+            alert('application field should not be empty')
+          }
+          /*-----------*/
+          if(rollNumber.value.length > 5 && applicationNum.value.length > 5){
+            console.log('go to result')
+            setTimeout(()=>{
+              window.location.href = `result.html?roll_number=${rollNumber.value}&application_number=${applicationNum.value}`; 
+            },5000)
+            
+            submit.value='Loading...'
+          }
+        })
+      </script>
+</body>
+</html>
